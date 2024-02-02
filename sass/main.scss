@@ -1,6 +1,6 @@
 @use './colors' as colors;
 @use './components' as components;
-@import './mixins';
+@use './mixins' as mixins;
 *,
 *::before,
 *::after {
@@ -53,7 +53,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include burgerBtn
+		@include burgerBtn;
 	}
 
     &__bars{
