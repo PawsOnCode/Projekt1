@@ -17,7 +17,6 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
-    background-color: rgb(230, 179, 230)
 }
 
 // NAV
@@ -53,7 +52,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include burgerBtn;
+		@include mixins.burgerBtn;
 	}
 
     &__bars{
@@ -70,4 +69,19 @@ body {
             transition-delay: .1s;
         }
     }
+}
+
+// HEADER
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 75vh;
+    text-align: center;
+    color: colors.$pure-white;
+    @include mixins.heroImages('../img/header-small.jpeg');
 }

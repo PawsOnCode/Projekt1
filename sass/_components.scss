@@ -1,3 +1,5 @@
+@use './colors';
+
 .wrapper {
 	margin: 0 auto;
 	width: 100px;
@@ -19,7 +21,7 @@
 	&-right {
 		top: 0;
 		right: -50px;
-		transform: skew (45deg);
+		transform: skew(45deg);
 	}
 }
 
