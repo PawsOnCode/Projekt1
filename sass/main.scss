@@ -1,6 +1,6 @@
 @use './colors' as *;
 @use './mixins' as *;
-@import './components';
+@use './components' as *;
 *,
 *::before,
 *::after {
